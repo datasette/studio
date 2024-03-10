@@ -1,0 +1,10 @@
+{
+    "name": "Datasette Studio",
+    "image": "python:3.11-slim",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "pip install datasette-studio datasette-codespaces && datasette-studio data.db --create",
+    "forwardPorts": [8001],
+    "shutdownAction": "stopContainer"
+}
