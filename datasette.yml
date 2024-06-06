@@ -3,6 +3,10 @@ databases:
     allow:
       id: root
 
+permissions:
+  manage-secrets:
+    id: root
+
 plugins:
   datasette-secrets:
     encryption-key:
