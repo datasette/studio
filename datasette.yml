@@ -1,0 +1,13 @@
+databases:
+  secrets:
+    allow: false
+
+permissions:
+  manage-secrets:
+    id: root
+
+plugins:
+  datasette-secrets:
+    encryption-key:
+      $file: .datasette-secrets-key
+    database: secrets
