@@ -1,6 +1,6 @@
 {
     "name": "Datasette Studio",
-    "image": "python:3.11-slim",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
