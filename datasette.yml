@@ -1,0 +1,10 @@
+databases:
+  secrets:
+    allow:
+      id: root
+
+plugins:
+  datasette-secrets:
+    encryption-key:
+      $file: /workspaces/studio/.datasette-secrets-key
+    database: secrets

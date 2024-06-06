@@ -4,7 +4,7 @@
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
-    "postCreateCommand": "pip install datasette-studio datasette-codespaces && datasette-studio data.db --create",
+    "postCreateCommand": "/workspaces/studio/start.sh",
     "forwardPorts": [8001],
     "shutdownAction": "stopContainer"
 }
