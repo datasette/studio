@@ -4,7 +4,7 @@
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
-    "postCreateCommand": "/workspaces/studio/start.sh",
+    "postStartCommand": "/workspaces/studio/start.sh",
     "forwardPorts": [8001],
     "shutdownAction": "stopContainer"
 }
