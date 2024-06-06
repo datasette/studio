@@ -1,7 +1,6 @@
 databases:
   secrets:
-    allow:
-      id: root
+    allow: false
 
 permissions:
   manage-secrets:
@@ -10,5 +9,5 @@ permissions:
 plugins:
   datasette-secrets:
     encryption-key:
-      $file: /workspaces/studio/.datasette-secrets-key
+      $file: .datasette-secrets-key
     database: secrets
